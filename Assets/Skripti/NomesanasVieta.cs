@@ -103,6 +103,14 @@ public class NomesanasVieta : MonoBehaviour,
                          objektuSkripts.bussKoord;
                         break;
 
+					case "b2":
+						objektuSkripts.b2.GetComponent<RectTransform>().localPosition = objektuSkripts.b2Koord;
+						break;
+
+					case "cements":
+						objektuSkripts.CementaMasina.GetComponent<RectTransform>().localPosition = objektuSkripts.CementaKoord;
+						break;
+
                     default:
                         Debug.Log("Tags nav definēts!");
                         break;

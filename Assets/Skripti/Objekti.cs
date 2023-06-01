@@ -6,6 +6,8 @@ public class Objekti : MonoBehaviour {
 	public GameObject atkritumuMasina;
 	public GameObject atraPalidziba;
 	public GameObject autobuss;
+	public GameObject b2;
+	public GameObject CementaMasina;
 
 	[HideInInspector]
 	public Vector2 atkrMKoord;
@@ -13,6 +15,10 @@ public class Objekti : MonoBehaviour {
 	public Vector2 atrPKoord;
 	[HideInInspector]
 	public Vector2 bussKoord;
+	[HideInInspector]
+	public Vector2 b2Koord;
+	[HideInInspector]
+	public Vector2 CementaKoord;
 
 	public Canvas kanva;
 
@@ -34,5 +40,9 @@ public class Objekti : MonoBehaviour {
 
         bussKoord =
 		autobuss.GetComponent<RectTransform>().localPosition;
+
+		b2Koord = b2.GetComponent<RectTransform>().localPosition;
+
+		CementaKoord = CementaMasina.GetComponent<RectTransform>().localPosition;
     }
 }
