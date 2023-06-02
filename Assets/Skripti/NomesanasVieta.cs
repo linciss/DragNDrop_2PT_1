@@ -111,6 +111,40 @@ public class NomesanasVieta : MonoBehaviour,
 						objektuSkripts.CementaMasina.GetComponent<RectTransform>().localPosition = objektuSkripts.CementaKoord;
 						break;
 
+					case "e46":
+						objektuSkripts.e46.GetComponent<RectTransform>().localPosition = objektuSkripts.e46Koord;
+						break;
+
+                    case "e61":
+                        objektuSkripts.e61.
+                        GetComponent<RectTransform>().localPosition =
+                        objektuSkripts.e61Koord;
+                        break;
+
+                    case "ekskavators":
+                        objektuSkripts.ekskavators.
+                        GetComponent<RectTransform>().localPosition =
+                        objektuSkripts.ekskavatorsKoord;
+                        break;
+
+                    case "policija":
+                        objektuSkripts.policija.
+                         GetComponent<RectTransform>().localPosition =
+                         objektuSkripts.policijaKoord;
+                        break;
+
+                    case "trak1":
+                        objektuSkripts.traktors1.GetComponent<RectTransform>().localPosition = objektuSkripts.traktors1Koord;
+                        break;
+
+                    case "trak5":
+                        objektuSkripts.traktors5.GetComponent<RectTransform>().localPosition = objektuSkripts.traktors5Koord;
+                        break;
+
+                    case "ugunsdzeseji":
+                        objektuSkripts.ugunsdzesejs.GetComponent<RectTransform>().localPosition = objektuSkripts.ugunsdzesejsKoord;
+                        break;
+
                     default:
                         Debug.Log("Tags nav definēts!");
                         break;
