@@ -9,6 +9,7 @@ public class NomesanasVieta : MonoBehaviour,
 	private Vector2 vietasIzm, velkObjIzm;
 	private float xIzmStarpiba, yIzmStarpiba;
 	public Objekti objektuSkripts;
+    public SpelesBeigas spelesBeigas;
 
     
 
@@ -106,7 +107,7 @@ public class NomesanasVieta : MonoBehaviour,
                             objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanasKoAtskanot[11]); objektuSkripts.nomestasMasinas++;
                             break;
 
-                        case "ugunsdzeseji":
+                        case "ugunsdz":
                             objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanasKoAtskanot[12]); objektuSkripts.nomestasMasinas++;
                             break;
 
@@ -121,6 +122,9 @@ public class NomesanasVieta : MonoBehaviour,
 				objektuSkripts.vaiIstajaVieta = false;
 				objektuSkripts.skanasAvots.PlayOneShot(
 					objektuSkripts.skanasKoAtskanot[0]);
+
+                //netrāpot pievieno laiku
+                spelesBeigas.laiks += 5f;
 
                 switch (eventData.pointerDrag.tag){
                     case "atkritumi":
@@ -189,6 +193,7 @@ public class NomesanasVieta : MonoBehaviour,
                         Debug.Log("Tags nav definēts!");
                         break;
                 }
+               
             }
 		}
 		

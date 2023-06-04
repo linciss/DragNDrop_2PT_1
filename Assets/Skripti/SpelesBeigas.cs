@@ -14,7 +14,7 @@ public class SpelesBeigas : MonoBehaviour {
     public GameObject[] zvaigznes;
     
 
-	float laiks = 0f;
+	public float laiks = 0f;
 	string teksts;
     TimeSpan t;
     
@@ -23,13 +23,13 @@ public class SpelesBeigas : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		
+        Debug.Log(laiks);
         //ja statuss ir true, tad spēle turpinās
         if (!aina.spelesStatus)
 			return;
 
         // ja objekti ir vairāk par 12, tad spēle beidzas
-		if (objekti.nomestasMasinas > 1)
+		if (objekti.nomestasMasinas >= 12)
 		{
             aina.spelesStatus = false;
             beiguEkrans.SetActive(true);

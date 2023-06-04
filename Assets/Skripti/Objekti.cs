@@ -86,5 +86,8 @@ public class Objekti : MonoBehaviour {
 
     }
 
-	
+	void Update()
+	{
+		Debug.Log(nomestasMasinas);
+    }
 }
