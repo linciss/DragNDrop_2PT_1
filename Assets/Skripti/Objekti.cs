@@ -16,6 +16,8 @@ public class Objekti : MonoBehaviour {
 	public GameObject traktors5;
 	public GameObject ugunsdzesejs;
 
+	public int nomestasMasinas = 0;
+
 
 	[HideInInspector]
 	public Vector2 atkrMKoord;
@@ -83,4 +85,6 @@ public class Objekti : MonoBehaviour {
 
 
     }
+
+	
 }

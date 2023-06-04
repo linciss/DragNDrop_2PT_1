@@ -25,7 +25,7 @@ public class DragDropSkripts : MonoBehaviour,
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Uzklikšķināts uz velkama objekta!");
+       
         objektuSkripts.pedejaisVilktais = null;
         kanvasGrupa.alpha = 0.6f;
         kanvasGrupa.blocksRaycasts = false;

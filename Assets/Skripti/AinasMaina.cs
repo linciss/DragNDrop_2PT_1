@@ -4,22 +4,35 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class AinasMaina : MonoBehaviour {
 
-    //aiziet uz sakum ekranu
-    public void UzSakumu()
+    public GameObject panel;
+    public bool spelesStatus = false;
+
+    //pauzē spēli
+    public void pause()
     {
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
+       panel.SetActive(true);
+        spelesStatus = false;
     }
 
-    //aiziet uz speles ainu
-    public void UzSpelesAinu()
+    // sāk spēli
+    public void saktSpeli()
     {
         SceneManager.LoadScene(1, LoadSceneMode.Single);
+        spelesStatus = true;
     }
 
+    //turpina speli
+    public void turpinatSpeli()
+    {
+        panel.SetActive(false);
+        spelesStatus = true;
+    }
 
     //aptur speli
     public void Apturet()
     {
         Application.Quit();
     }
+
+
 }
