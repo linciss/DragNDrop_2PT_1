@@ -12,6 +12,7 @@ public class SpelesBeigas : MonoBehaviour {
 	public GameObject beiguEkrans;
 	public Text laikaTeksts;
     public GameObject[] zvaigznes;
+    
 
 	float laiks = 0f;
 	string teksts;
@@ -44,6 +45,7 @@ public class SpelesBeigas : MonoBehaviour {
     }
 
 
+    //nosaka zvaigžņu skaitu un parāda tās
     public void raditZvaigznes(float laiks)
     {
 
@@ -57,7 +59,7 @@ public class SpelesBeigas : MonoBehaviour {
         }
         if (laiks > 120 && laiks <= 180)
         {
-            for (int i = 0; i < 2; i++)
+            for(int i =0; i< 2; i++)
             {
                 zvaigznes[i].SetActive(true);
             }
