@@ -28,7 +28,7 @@ public class SpelesBeigas : MonoBehaviour {
         if (!aina.spelesStatus)
 			return;
 
-        // ja objekti ir vairāk par 12, tad spēle beidzas
+        // ja objekti ir vairāk vai vienādi ar 12, tad spēle beidzas
 		if (objekti.nomestasMasinas >= 12)
 		{
             aina.spelesStatus = false;
